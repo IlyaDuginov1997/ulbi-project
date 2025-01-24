@@ -1,7 +1,7 @@
 import {render} from "react-dom";
-import {CounterComponent} from "./components/Counter";
+import {App} from "./App";
 
 render(
-    <CounterComponent/>,
+    <App/>,
     document.getElementById("root")
 )
