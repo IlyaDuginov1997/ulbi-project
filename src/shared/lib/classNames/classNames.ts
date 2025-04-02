@@ -1,9 +1,9 @@
 type Mods = Record<string, string | boolean>;
 
-export function classNames(cls: string, mods: Mods, adds: Array<string>): string {
+export function classNames(cls: string, mods: Mods = {}, adds: Array<string> = []): string {
     return [
         cls,
-        ...adds,
+        ...adds.filter(Boolean),
         ...Object.entries(mods)
             .reduce((acc, [key, value]) => {
                 if (Boolean(value)) {
