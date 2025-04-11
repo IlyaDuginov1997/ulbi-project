@@ -1,4 +1,4 @@
-import {lazy} from "react";
+import { lazy } from 'react';
 
 const AboutLazy = lazy(() => import('./About'));
 

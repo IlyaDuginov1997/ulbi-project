@@ -1,5 +1,5 @@
-import React, {FC} from 'react'
-import {useTranslation} from "react-i18next";
+import React, { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type AboutPropsType = {};
 
@@ -8,7 +8,7 @@ const About: FC<AboutPropsType> = () => {
 
   return (
     <div>{t('О нас')}</div>
-  )
+  );
 };
 
 export default About;
