@@ -1,3 +1,3 @@
-import AboutLazy from "./ui/AboutLazy";
+import AboutLazy from './ui/AboutLazy';
 
-export {AboutLazy as AboutPage};
+export { AboutLazy as AboutPage };

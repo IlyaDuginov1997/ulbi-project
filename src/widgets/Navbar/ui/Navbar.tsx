@@ -1,22 +1,22 @@
-import React, {FC} from 'react'
-import {classNames} from "shared/lib/classNames/classNames";
+import React, { FC } from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { AppLink, LinkThemes } from 'shared/ui/AppLink/AppLink';
 import cls from './Navbar.module.scss';
-import {AppLink, LinkThemes} from "shared/ui/AppLink/AppLink";
 
 interface NavbarProps {
     className?: string;
 }
 
 export const Navbar: FC<NavbarProps> = (props) => {
-  const {className} = props;
+  const { className } = props;
 
-    return (
+  return (
     <div className={classNames(cls.Navbar, {}, [className])}>
 
-        <div className={cls.links}>
-            <AppLink theme={LinkThemes.SECONDARY} to={'/'}>Home</AppLink>
-            <AppLink theme={LinkThemes.SECONDARY} to={'/about'}>About</AppLink>
-        </div>
+      <div className={cls.links}>
+        <AppLink theme={LinkThemes.SECONDARY} to="/">Home</AppLink>
+        <AppLink theme={LinkThemes.SECONDARY} to="/about">About</AppLink>
+      </div>
     </div>
-  )
+  );
 };
